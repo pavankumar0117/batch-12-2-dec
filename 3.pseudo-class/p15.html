@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2n means even and 2n-1 is a odd */
+        ol li:nth-last-of-type(2n){     
+            color: darkblue;
+        }
+        dl dd:nth-last-of-type(2n-1){
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>:nth-last-of-type</h1>
+    <p>colors names</p>
+    <ol reversed>
+        <li>green</li>
+        <li>purple</li>
+        <li>yellow</li>
+        <li>white</li>
+        <li>grey</li>
+        <li>orange</li>
+    </ol>
+    <h3>nth-of last-type</h3>
+    <dl>
+        <dt>vegetables</dt>
+        <dd>tamoto</dd>
+        <dd>onion</dd>
+        <dd>carrot</dd>
+        <dt>fruits</dt>
+        <dd>apple</dd>
+        <dd>mango</dd>
+        <dd>greps</dd>
+    </dl>
+</body>
+</html>

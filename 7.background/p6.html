@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            padding: 20px;
+        }
+        .container div{
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-image: url(https://picsum.photos/id/400/500/300);
+            border: 10px dotted red;
+            background-repeat: no-repeat;
+        }
+        .container h1{
+            font-size: 5em;
+        }
+        .b1{
+            background-blend-mode: normal;
+        }
+        .b2{
+            background-blend-mode: multiply;
+        }
+        .b3{
+            background-blend-mode: hard-light;
+        }
+        .b4{
+            background-blend-mode:difference;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>background-origin</h1>
+    <div class="container">
+        <div class="b1">
+            <h1>border box</h1>
+        </div>
+        <div class="b2">
+            <h1>padding box</h1>
+        </div>
+        <div class="b3">
+            <h1>content box</h1>
+        </div>
+        <div class="b4">
+            <h1>text clip css</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

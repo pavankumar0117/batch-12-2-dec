@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            padding: 20px;
+
+
+        }
+        p:not(.nt){
+            background-color: chartreuse;
+        }
+        .nt{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>:not (class/id/tag)</h1>   
+    <!-- not class is used for except that other will executed -->
+    <div>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <p class="nt">paragraph 3</p>
+        <p>paragraph 4</p>
+        <p>paragraph 5</p>
+        <p>paragraph 6</p>
+        <p>paragraph 7</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+Types of css selectors
+
+1.universal selectors(*)
+2.html tag selectors
+3.class selectors(.)
+4.id selectors(#)
+5.group selectors(,)
+6.compound selectors
+7.Combinators
+    a)Decedent selectors(space)
+    b)Child selectors(>)
+    c)general sibling selectors(~)
+    d)Adjucent sibling selectors(+)
+8.Attributes selectors
+    a)[attr]
+    b)[attr=value]
+    c)[attr~=value]
+    d)[attr^=value]
+    e)[attr$=value]
+    f)[attr*=value]
+    

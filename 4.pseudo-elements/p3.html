@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        #alert{
+            width: 40%;
+            box-shadow: 3px 3px 3px rgba(0,0,0,2);
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+
+        }
+        dialog::backdrop{
+            background-image: linear-gradient(to top right,skyblue,deepskyblue,cyan,orange)!important;
+        }
+    </style>
+</head>
+<body>
+    <h1>::backdrop</h1>
+
+    <button class="btn show">show dialog</button>
+
+    <dialog id="alert">
+        <button id="cls">close</button>
+
+        <div class="content">
+            <h3>Are you sure to logout</h3>
+            <div class="btn-group">
+                <button class="btn no">No</button>
+                <button class="btn yes">Yes</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        let alert = document.getElementById("alert")
+        let shBtn = document.querySelector(".show")
+        let clsBtn = document.getElementById("cls")
+
+        shBtn.addEventListener("click",function(){
+            //alert.show   //dialouge
+                alert.showModal()
+        })
+        clsBtn.addEventListener("click",function(){
+            alert.close()
+        })
+
+    </script>
+</body>
+</html>

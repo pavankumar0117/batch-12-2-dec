@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1,
+        .container-2{
+            background-color: aqua;
+            padding: 20px;
+        }
+        .card-1,
+        .card-2{
+            background-color: beige;
+            padding: 20px;
+            width: 200px;
+        }
+        .card-1 ~ p{
+            background-color: blanchedalmond;
+            padding: 20px;
+        }
+        .card-2 + p{
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>general and adjecent sibling </h1>
+    <h2>general sibling </h2>
+    <section class="container-1">
+        <div class="card-1">
+            <h1> child card title</h1>
+            <p>child paragraph inside a card</p>
+        </div>
+        <p>sibling paragraph-1</p>
+        <p>sibling paragraph-2</p>
+        <p>sibling paragraph-3</p>
+    </section>
+    <h2>adjacent sibling</h2>
+    <section class="container-2">
+        <div class="card-2">
+            <h1> child card title</h1>
+            <p>child paragraph inside a card</p>
+        </div>
+        <!-- <h2>title</h2> -->
+         <!-- its only for immidiate part it doesn't work after the part and it only taking 1st paragraph -->
+        <p>sibling paragraph-1</p>
+        <p>sibling paragraph-2</p>
+        <p>sibling paragraph-3</p>
+    </section>
+</body>
+</html>
