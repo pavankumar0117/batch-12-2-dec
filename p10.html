@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            overflow-x:hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 60px;
+            width: 100%;
+            background-color: #088608;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+        }
+
+        nav a:not(.logo) { 
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: all 0.3s;
+            transition: all o.3s;
+        }
+
+        nav a.logo {
+            text-decoration: none;
+            color: #f8f7fc;
+            text-transform: #ffffff;
+            color: #222;
+        }
+
+        nav a:hover:not(.logo) {
+            background-color: #fff;
+            color: #222;
+
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+
+        }
+
+        section div {
+            height: 100vh;
+            padding-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">logo here</a>
+        <div>
+            <a href="#home"></a>
+            <a href="#about"></a>
+            <a href="#contact"></a>
+
+        </div>
+    </nav>
+    <section>
+        <div id="home">
+            <h1>home section</h1>
+        </div> 
+
+        <div id="about">
+            <h1>about section</h1>
+        </div> 
+
+        <div id="contact">
+            <h1>contact section</h1>
+        </div>
+    </section>
+</body>
+</html>

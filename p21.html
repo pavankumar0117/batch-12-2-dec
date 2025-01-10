@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>form tags or elements </h1>
+     <form action="" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>login form</legend>
+            <div>
+                <label for="user">user name</label>
+                <input type="text" id="user" name="user" minlength="1" required>
+
+            </div>
+           <div>
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="pass" minlength="2" maxlength="8" placeholder="min2 max 2" required>
+           </div>
+           <div>
+            <input type="submit" value="login">
+           </div>
+
+        </fieldset>
+    </form>
+    <!-- 
+    form elements ->used to coolect from the user 
+    fieldset,legend
+    input,
+    label
+    textarea
+    select
+
+    action->server url or server name
+    method->decides the data
+    get=it will be display data in the url bar(query)url?key1=value1&
+    key2=value2
+    post=hiding the data in the task bar
+    autocomplete
+    on=form input reading the cache memory
+    off= form wont read any browser cache memory
+    enctype
+    it decide the encryption type formate
+    application/x-www-url-encoded =>default encryption formate except filr input
+    multipart/form-data=>only for file input
+
+    input attributes 
+        type=decide the type of input
+        name=field name (unique)
+        value=default value
+        required=mandotory to fill the data
+        id=optional (target selector)
+        placeholder=
+        hint for user
+        minlength and maxlength =string length
+        min and max= number
+    -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>check box</h1>
+    <form action="">
+        <div>
+            <label for="agree">
+                <input type="checkbox" name="agree" id="agree" onchange="handler()">i here by declare that the above
+                infermations are true.
+                <p id="status"></p>
+        </div>
+        </label>
+
+    </form>
+    <script>
+        var agEl=document.getElementById("agree");
+        var stEl=document.getElementById("status");
+        function handler(){
+            stEl.innerText=agEl.checked;
+        }
+
+    </script>
+</body>
+</html>

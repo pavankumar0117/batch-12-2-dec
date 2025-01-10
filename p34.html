@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>its kishor's</h1>
+    <button id="shBtn">show mercy</button>
+    <dialog id="alDlg">
+        <button id="clBtn">I love you Jaanuuu</button>
+        <div>
+            <h1>do you love me?</h1>
+            <div>
+                <button>yes</button>
+                <button>obviously yes</button>
+            </div>
+        </div>
+
+    </dialog>
+    <script>
+        let shBtn=document.getElementById("shBtn")
+        let clBtn=document.getElementById("clBtn")
+        let dlgEl=document.getElementById("alDlg")
+        shBtn.addEventListener("click",function(){
+            dlgEl.show()
+        });
+        clBtn.addEventListener("click",function(){
+            dlgEl.close()
+        })
+    </script>
+</body>
+</html>

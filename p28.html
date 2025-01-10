@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="">
+
+        <div>
+            <label for="first">first name</label>
+            <input type="text" name="first" id="first" placeholder="enter your 1st name">
+           
+        </div>
+        <div>
+            <label for="last">last name</label>
+            <input type="text" name="last" id="last"placeholder="enter yoir last name">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email">
+        </div>
+        <div>
+            <label for="pass">password</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+            <label for="gender">gender</label><br>
+            <input type="radio" name="gender" id="gender" value="male">male <br>
+            <input type="radio" name="gender" id="gender" value="female">female <br>
+            <input type="radio" name="gender" id="gender" value="transgender">transgender <br>
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <div>
+            <label for="pref">preferences</label>
+            <input type="checkbox" name="pref" id="pref" value="acrylic painting">acrylic painting <br>
+            <input type="checkbox" name="pref" id="pref" value="oil painting">oil painting <br>
+            <input type="checkbox" name="pref" id="pref" value="water colorpainting">water color painting <br>
+        </div>
+        <div>
+            <label for="occupation">select occupation</label>
+            <select name="occupation" id="occupation">
+                <option value="null"></option>
+                <option value="BCA">BCA</option>
+                <option value="BCom">BCom</option>
+                <option value="BA">BA</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">bio</label>
+            <textarea name="bio" id="bio" cols="20" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>

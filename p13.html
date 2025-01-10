@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            text-align: center;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 10px;
+          
+        }
+        th{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>table </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>sl no</th>
+                <th>full name</th>
+                <th>position </th>
+                <th>salary</th>
+                <th>type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Billgates</td>
+                <td>founder microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Stevejobs</td>
+                <td>apple founder</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3
+                </td>
+                <td>larry page</td>
+                <td>founder google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>mark zukerburg</td>
+                <td>founder facebook</td>
+                <td>$1200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">total expenses</td>
+                <td>$10000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

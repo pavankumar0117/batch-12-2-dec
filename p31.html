@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>progressingmtag</h1>
+    <!--to display download progress / uploading /network speek
+     -->
+    <!-- 
+      -->
+    <progress style="width: 100%;" min="0" max="100"  id="prog"></progress>
+    <h3 id="status"></h3>
+    <script>
+        let prog=document.getElementById("prog")
+        let status=document.getElementById("status")
+        let x=0;
+        function loadval(){
+            if(x<=100){
+                prog.value=x;
+                status.innerText=x+"%";
+                x++;
+                console.log(`x=`,x)
+            }
+        }
+        setInterval(loadval,500)
+    </script>
+
+</body>
+</html>

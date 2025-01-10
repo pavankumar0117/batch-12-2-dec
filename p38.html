@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #txt{
+            height: 400px;
+            width: 800px;
+            border: solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>FROM YOUR KISHOR</h1>
+    <canvas id="txt" width="800" height="300"></canvas>
+    <script>
+        let can=document.getElementById("txt")
+        let ctx=can.getContext("2d")
+        // ctx.font="32px monospace";
+        // ctx.strokeText("welcome to html",30,40)
+
+        // ctx.font="40 px cursive";
+        // ctx.fillStyle="orange"
+        // ctx.fillText("welcome to web",40,100) 
+
+        ctx.font="50px algerian";
+        ctx.fillStyle="green";
+        ctx.fillText("HEY, LEKHANA  I LOVE YOU",40,100)
+        ctx.fillText("           YOU MUST ",80,150)
+        ctx.fillText("          LOVE ME ",120,200)
+        ctx.fillText("            🫀",160,250)
+    </script>
+
+
+</body>
+</html>

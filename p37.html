@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            width: 500px;
+            height:500px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>canvas</h1>
+    <!-- give us the container    to print 2d graphics -->
+     <canvas id="can"></canvas>
+    <script>
+        var fcan=document.getElementById("can")
+        var x=fcan.getContext("2d")
+        x.fillStyle="orange"
+        x.fillRect(30,40,20,30)
+        x.strokeRect(30,40,20,30)
+    </script>
+
+</body>
+</html>
