@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            overflow-x: hidden;
+            height: 100px;
+        }
+        .container{
+            width: 80px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .container .card{
+            border: 2px solid slategray;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container .card img{
+            min-width: 100px;
+            border-radius: 10px;
+
+        }
+        .card h4{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .card button{
+            padding: 10px 12px;
+            border: 2px solid slategray;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <img src="https://picsum.photos/id/123/500/500" alt="no pic">
+            <div class="content">
+                <h4>Product-1</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/124/500/500" alt="no pic">
+            <div class="content">
+                <h4>Product-2</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div><div class="card">
+            <img src="https://picsum.photos/id/125/500/500" alt="no pic">
+            <div class="content">
+                <h4>Product-3</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div><div class="card">
+            <img src="https://picsum.photos/id/126/500/500" alt="no pic">
+            <div class="content">
+                <h4>Product-4</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

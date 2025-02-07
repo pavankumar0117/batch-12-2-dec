@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            overflow-x: hidden;
+            padding: 20px;
+
+        }
+        .container{
+            background-color: #222;
+            padding: 20px;
+        }
+
+        .container div{
+            color: #fff;
+            background-color: slateblue;
+            margin: 2px;
+            padding: 10px;
+        }
+        select{
+            padding: 10px 12px;
+            font-style: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+    </section>
+    <hr>
+    <main>
+        <label for="disp">display</label>
+        <select name="disp" id="disp">
+           
+            <option value="null">choose-display value</option>
+            <option >block</option>
+            <option >inline-block</option>
+            <option >flex</option>
+            <option >inline-flex</option>
+            <option >none</option>
+            <option >grid</option>
+            <option >inline-grid</option>
+            <option >table</option>
+            <option >list-item</option>
+        </select>
+    </main>
+    <script>
+        let blocks =document.querySelector(".container")
+        let dispEl =document.getElementById('disp')
+
+        dispEl.addEventListener('change',function(){
+            console.log(`val=`, this.value)
+            if(this.value !== "null"){
+                blocks.style.display=this.value;
+            }
+        });
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex1,
+        .ex2{
+            background-image: linear-gradient(gold,slateblue,skyblue);
+            font-size: 2rem;
+            padding: 0px 16px;
+            border-radius: 1rem;
+            margin-left: 10px;
+            line-height: 2;
+        }
+        .ex1{
+            box-decoration-break: slice;
+        }
+        .ex2{
+            box-decoration-break: clone;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-decoration-break</h1>
+    <p>
+        <span class="ex1">welcome to <br>the css <br>box-decoration</span>
+    </p>
+    <p>
+        <span class="ex2">welcome to <br>the css <br>box-decoration</span>
+    </p>
+
+</body>
+</html>

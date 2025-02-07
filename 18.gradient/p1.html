@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            padding: 20%;
+            overflow-x: hidden;
+
+        }
+        .container div{
+            width: 80%;
+            margin: auto;
+            height: 100px;
+            /* border: 2px solid#222; */
+            margin: 5px;
+        }
+        .b1{
+            background-image: linear-gradient(skyblue,orange);
+        }
+        .b2{
+            background-image: linear-gradient(to left, red ,skyblue,orange);
+        }
+        .b3{
+            background-image: linear-gradient(to right, skyblue,orange);
+        }
+        .b4{
+            background-image: linear-gradient(to top,red , skyblue,orange);
+        }
+        .x1{
+            background-image: linear-gradient(to top right, royalblue,green);
+        }
+        .x2{
+            background-image: linear-gradient(to top left, royalblue,green,orange);
+        }
+        .x3{
+            background-image: linear-gradient(to bottom right, royalblue,rgb(35, 135, 35));
+        }
+        .x4{
+            background-image: linear-gradient(to bottom left, royalblue,green);
+        }
+    </style>
+</head>
+<body>
+    <h1>linear-Gradient</h1>
+    <h3>background or backgrounf color</h3>
+    <section class="container">
+        <div class="b1"><b>block-1</b></div>
+        <div class="b2">block-2</div>
+        <div class="b3">block-3</div>
+        <div class="b4">block-4</div>
+    </section>
+    <hr>
+
+
+    <section class="container">
+        <div class="x1">block-1</div>
+        <div class="x2">block-2</div>
+        <div class="x3">block-3</div>
+        <div class="x4">block-4</div>
+    </section>
+</body>
+</html>

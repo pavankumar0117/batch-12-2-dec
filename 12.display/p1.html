@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+
+        }
+        .container1{
+            display: block;
+        }
+
+        .container2
+        {
+            display: flex;
+        }
+        section div{
+            height: 100px;
+            width: 100%;
+            color: whitesmoke;
+            margin: 10px;
+            background: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>display block and flex</h1>
+    <section class="container1">
+        <div class="b1">
+            block
+        </div>
+        <div class="b2">block</div>
+        <div class="b3">block</div>
+    </section>
+    <section class="container2">
+        <div class="b1">
+            block
+        </div>
+        <div class="b2">block</div>
+        <div class="b2">block</div>
+    </section>
+</body>
+</html>

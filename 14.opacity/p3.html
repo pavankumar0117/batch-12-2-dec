@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            height: 100%;
+        }
+        .navbar{
+            background-color: darkgreen;
+            height: 60px;
+        }
+        .navbar .container{
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+
+        }
+        .navbar .logo{
+            font-size: 1.5em;
+        }
+        .navbar .menu a{
+            padding: 8px 10px;
+            font-size: 1.2em;
+            color: #222;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .navbar .menu:hover a{
+            opacity: 0.2;
+            filter: blur(1px);
+        }
+        .navbar .menu a:hover{
+            background-color: #fff;
+            border: 2px solid #eee;
+            opacity: 1;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">logo-here</a>
+            <div class="menu">
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">Collections</a>
+                <a href="#" class="link">Stores</a>
+                <a href="#" class="link">Contact</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
