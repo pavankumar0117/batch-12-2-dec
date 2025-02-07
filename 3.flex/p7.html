@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        .top-heading{
+            width: 100%;
+            background-color: teal;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+        .content{
+            height: 100vh;
+            width: 100%;
+            background-color: orange;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-wrap: nowrap;
+            
+
+
+        }
+        aside{
+            width: 10%;
+            height: 100%;
+            background-color:lawngreen;
+
+        }
+        .left{
+            order: 1;
+        }
+        
+        .txt{
+            order: 2;
+        }
+        .right{
+            order: 3;
+        }
+        p{
+            text-align: center;
+            color: #ccc;
+            font-size: 1.4em;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header class="top-heading">
+            <h3>Heading Section</h3>
+        </header>
+
+        <div class="content">
+            <aside class="left">
+                left-sidebar
+            </aside>
+            <aside class="right">
+                right-sidebar
+            </aside>
+            <main class="txt">
+                <h3>Content-Box</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam repudiandae porro. Facere in, nobis possimus impedit quod perspiciatis? Accusamus esse culpa voluptates itaque possimus repellat, incidunt distinctio quibusdam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi tenetur necessitatibus minus dignissimos. Quos temporibus magnam eius quidem. Numquam nostrum, amet illum rerum debitis laudantium unde labore placeat excepturi?</p>
+            </main>
+        </div>
+
+
+
+    </section>
+</body>
+</html>

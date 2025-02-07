@@ -1,0 +1,440 @@
+@import url('https://font.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+/* css variables */ 
+:root {
+    --bg-white:#fefefe;
+    --bg-gray: slategray;
+    --bg-black: #111;
+    --txt-black: #333;
+    --txt-white: #fff;
+    --primary: slateblue;
+    --danger: orangered;
+    --warning: orange;
+    --info: deepskyblue;
+    --one-color: cornsilk;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* color: khaki */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: var(--one-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.side_menu {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100vh;
+    width: 30%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--bg-black);
+}
+
+.side_menu .profile {
+    margin-top: 2rem;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side_menu .profile .image img {
+    width: 150px;
+    height: 150px;
+    background-color: var(--danger);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.profile .user {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.profile .user h1{
+    font-size: 2rem;
+    color: var(--danger);
+}
+
+.profile .social,
+.home-content .social {
+    width: 80%;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile .social i,
+.home-content .social i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-white);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.profile .social i:hover {
+    background-color: var(--primary);
+}
+
+.side_menu .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -30px;
+}
+
+.side_menu .menu .menu-items {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+
+.side_menu .menu .menu-items li{
+    padding: 15px;
+    background-color: var(--danger);
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.side_menu .menu .menu-items li:hover,
+.side_menu .menu .menu-items li:active {
+    background-color: var(--primary);
+}
+
+.side_menu .menu .menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side_menu .menu .menu-items li a i {
+    padding-right: 1rem;
+}
+
+.btn-toggler {
+    display: none;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    position: fixed;
+    left: 30%;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container #home{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://picsum.photos/1100/800');
+    background-position: center;
+    background-size: cover;
+}
+
+#home .home-content {
+    padding-left: 2rem;
+}
+
+.home-content .user {
+    font-size: 2.2rem;
+    color: var(--warning);
+    text-shadow: 3px 4px 4px rgba(0,0,0,0.2);
+}
+
+.home-content .profession h3{
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    color: var(--danger);
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* about section */
+#about {
+    padding-top: 1rem;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.6rem;
+    color: var(--primary);
+    font-weight: 600 !important;
+}
+
+.desc {
+    text-align: justify;
+    word-break: break-all;
+    color: var(--bg-gray);
+}
+
+#about .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-content .about-image {
+    width: 50%;
+    height: 100%;
+}
+
+.about-content .about-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.about-content .about-info h3 {
+    color: var(--bg-gray);
+}
+
+.about-content .about-info p {
+    text-align: justify;
+    word-break: break-all;
+    font-size: 0.8rem;
+}
+
+.about-info .personal-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.personal-info .list {
+    width: 100%;
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    line-height: 3;
+}
+
+.personal-info .list .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* resume section */
+#resume {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+#resume .resume-content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.resume-content .education,
+.resume-content .certification {
+    width: 100%;
+}
+
+.resume-content .education h4,
+.resume-content .certification h4 {
+    font-size: 1.2rem;
+    color: var(--warning);
+}
+
+.resume-content .card-item {
+    padding: 0px 0px 16px 16px;
+    border-left: 3px solid var(--primary);
+    margin-top: -2px;
+    position: relative;
+}
+
+.resume-content .card-item::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--warning);
+    top: 0;
+    left: -11px;
+    border: 3px solid var(--primary);
+}
+
+/* portfolio section */
+
+#portfolio{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 0.5rem;
+}
+
+#portfolio .portfolio-content{
+    padding: 20px;
+    width: 100%;
+}
+
+.portfolio-content .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+
+.projects .project-card .front img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.project-card {
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.project-card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right, var(--primary), var(--warning));
+    opacity: 0;
+}
+
+.project-card:hover .back{
+    height: 100%;
+    opacity: 1;
+}
+
+.project-card .back h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.project-card .back .btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.btn-group a{
+    text-decoration: none;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn-group .git {
+    background-color: var(--primary);
+}
+.btn-group .live{
+    background-color: var(--danger);
+}
+
+/* Contact section */
+
+#contact {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;   
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+#contact .contact-content {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contact-content .map,
+.contact-content .contact-form {
+    width: 100%;
+    padding: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+.contact-form .form-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.form-group .form-input {
+    padding: 8px 10px;
+    width: 100%;
+    border: 2px solid var(--primary);
+    outline: none;
+}
+
+.form-group .btn {
+    padding: 8px 10px;
+    margin-top: 2rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.form-group .submit{
+    background-color: var(--primary);
+}

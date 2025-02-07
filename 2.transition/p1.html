@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 40%;
+            padding: 10px;
+            margin: 10px;
+            background-color:orange;
+            transition-property: all ;
+            transition-duration: 4s;
+
+        }
+        p:hover{
+            width: 10%;
+            background-color: blue;
+        }
+        .txt1{transition-timing-function: ease;}
+        .txt2{transition-timing-function: ease-in;}
+        .txt3{transition-timing-function: ease-in-out;}
+        .txt4{transition-timing-function: ease-out;}
+        .txt5{transition-timing-function: linear;}
+        .txt6{transition-timing-function: step-start;}
+        .txt7{transition-timing-function: step-end;}
+        .txt8{transition-timing-function: steps();}
+        .txt9{transition-timing-function: cubic-bazier;}
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <div class="container">
+        <p class="txt1">ease</p>
+        <p class="txt2">ease-n</p>
+        <p class="txt3">ease-in-out</p>
+        <p class="txt4">ease-out</p>
+        <p class="txt5">linear</p>
+        <p class="txt6">step-start</p>
+        <p class="txt7">step-end</p>
+        <p class="txt8">steps()</p>
+        <p class="txt9">cubic-bazier</p>
+    </div>
+
+
+
+</body>
+</html>

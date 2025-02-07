@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p5.css">
+</head>
+<body>
+    <header class="heading">
+        <h2>Heading section</h2>
+    </header>
+    <aside class="left">left-side-bar</aside>
+    <div class="container">
+        <h2>Body section</h2>
+    </div>
+    <aside class="right">right-side bar</aside>
+
+    <footer class="foot">
+        <p>All rights are reserved &copy; <span id="yr"></span></p>
+    </footer>
+
+
+    <script>
+        function getPreYear(){
+            document.getElementById("yr").innerText= new Date().getFullYear();
+        }
+        getPreYear()
+    </script>
+</body>
+</html>

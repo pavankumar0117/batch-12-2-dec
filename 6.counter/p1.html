@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            
+            border: 2px solid slateblue;
+            counter-reset: ch;
+        }
+        h2::before{
+            counter-increment: ch;
+            content: counter(ch) ".";
+            color: orangered;
+        }
+        h2{
+            counter-reset: td;
+
+        }
+        h4::before{
+            counter-increment: td;
+            content: counter(ch)"." counter(td);
+            color: blue;
+            padding-left: 1rem;
+        }
+        h4{
+            counter-reset: sb;
+        }
+        h6::before{
+            counter-increment: sb;
+            content: counter(ch)"."counter(td)"."counter(sb);
+            color: rgb(28, 5, 130);
+            padding-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+
+    <div class="container">
+        <h2>HTML</h2>
+            <h4>Header tags</h4>
+            <h4>Formate  tags</h4>
+                <h6>paragraph</h6>
+                <h6>strong</h6>
+                <h6>bold</h6>
+                <h6>underline</h6>
+            <h4>List tags</h4>
+            <h4>Table tags</h4>
+        <h2>CSS</h2>
+            <h4>Selectors</h4>
+                <h6>Universal selectors</h6>
+                <h6>class,id,html tag</h6>
+                <h6>Pseudo-Element</h6>
+                <h6>Pseudo-Class</h6>
+            <h4>Background</h4>
+
+            
+        <h2>JavaScript</h2>
+            <h4>Variables</h4>
+            <h4>Datatypes</h4>
+            <h4>Operators</h4>
+                <h6>Arithmetic operator</h6>
+                <h6>logical</h6>
+                <h6>Relational</h6>
+                <h6>Increment/Decrement</h6>
+            <h4>Conditional-statements</h4>
+        <h2>React-JS</h2>
+            <h4>Real DOM V/S Virtual DOM</h4>
+            <h4>Components</h4>
+            <h4>Data binding</h4>
+                <h6>One way</h6>
+                <h6>Two way</h6>
+                <h6>Mwthod binding </h6>
+            <h4>State and Props</h4>
+       
+    </div>
+</body>
+</html>

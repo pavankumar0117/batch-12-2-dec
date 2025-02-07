@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: linear-gradient(to top right , white 50%,orange 20%);
+            animation-name: spin;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .normal{
+            animation-direction: normal;
+        }
+        .rev{
+            animation-direction: reverse;
+        }
+        .alter{
+            animation-direction: alternate;
+        }
+        .alter-rev{
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation direction</h1>
+
+    <h4>normal</h4>
+    <div class="circle normal"></div>
+    <h4>reverse</h4>
+    <div class="circle rev"></div>
+    <h4>alternate</h4>
+    <div class="circle alter"></div>
+    <h4>alternate reverse</h4>
+    <div class="circle alter-rev"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+            width: 50%;
+            margin: auto;
+        }
+        .container div{
+            width: 140px;
+            height: 140px;
+            background-color: royalblue;
+            margin: 10px;        
+            transition: all 5s;
+        }
+        .b1:hover{
+            transform: scale(2,2);
+        }
+        .b2:hover{
+            transform: scaleX(3.4);
+        }
+        .b3:hover{
+            transform: scaleY(3);
+        }
+        .b4:hover{
+            transform: scale3d(2,2,2);
+        }
+        .b5:hover{
+            transform: scaleZ(2);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>scale</h1>
+    <div class="container">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+    </div>
+</body>
+</html>

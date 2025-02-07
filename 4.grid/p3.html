@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+           display: grid;
+           column-gap: 5px;
+           row-gap: 5px;
+           grid-template-columns: repeat(4,1fr);
+        }
+       .container div{
+           padding: 20px;
+           /* background-color: teal; */
+        }
+        .box1{
+            grid-column: span 3;
+            background-color: orange;
+        }
+        .box2{
+            grid-row-start: span 3;
+            background-color: red;
+        }
+        .box3{
+            grid-row-start: span 2;
+            background-color: red;
+        }.box4{
+            grid-row-start: span 2;
+            background-color: rgb(183, 75, 75);
+        }.box5{
+            grid-row-start: span 2;
+            background-color: yellow;
+        }
+        .box6{
+            grid-row-start: span 2;
+            background-color: skyblue;
+        }.box7{
+            grid-row-start: span 2;
+            background-color:pink;
+        }.box8{
+            grid-row-start: span 2;
+            background-color:blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Grid column and Grid rows</h1>
+    <section class="container">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+        <div class="box5">five</div>
+        <div class="box6">six</div>
+        <div class="box7">seven</div>
+        <div class="box8">eight</div>
+        <div class="box9">8</div>
+    </section>
+</body>
+</html>

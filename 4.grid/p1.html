@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        bidy{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            padding: 20px;
+            display: grid;
+            grid-gap: 10px;
+            /* gap: 10px; */
+            grid-template-columns: 200px 1fr 400px;
+            grid-template-rows: 100px 1fr 200px;
+            /* 1fr= 1 frame / frame unit / fractions  */
+        }
+        div{
+            background-color: orange;
+            height: 100%;
+            width: 100%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </section>
+</body>
+</html>
